@@ -1,0 +1,119 @@
+
+/* Colores generales de fondo */
+.bg-fondo-oscuro {
+    background-color: #0b0c10;
+}
+
+.bg-seccion-alterna {
+    background-color: #12151f;
+}
+
+.text-gray {
+    color: #c5c6c7;
+}
+
+/* 1. Sobreescribir color del botón primario (Púrpura Neón / Hollow Purple) */
+.btn-primary {
+    background: linear-gradient(90deg, #6a1b9a, #4a148c);
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #8e24aa, #6a1b9a);
+    box-shadow: 0 0 15px rgba(142, 36, 170, 0.7);
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    color: #00e5ff;
+    border-color: #00e5ff;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #00e5ff;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+}
+
+/* 2. Personalizar la navbar */
+.bg-nav-personalizado {
+    background-color: rgba(11, 12, 16, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #00e5ff;
+}
+
+/* 3. Estilo propio para la sección hero */
+.seccion-hero {
+    background: linear-gradient(135deg, rgba(15, 12, 41, 0.9) 0%, rgba(48, 43, 99, 0.9) 50%, rgba(36, 36, 62, 0.9) 100%), 
+                url('../imagenes/fondo-hero.jpg') center/cover; /* Opcional: si tienes un fondo espacial */
+    border: 1px solid #4a148c;
+}
+
+/* 4. Efecto hover y diseño profundo en las cards */
+.tarjeta-gojo {
+    border: 1px solid #1f2833;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+
+.tarjeta-gojo img {
+    border-bottom: 2px solid #00e5ff;
+}
+
+.tarjeta-gojo:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 229, 255, 0.2);
+    border-color: #00e5ff;
+}
+
+/* =========================================
+   Estilos Neón y Textos
+========================================= */
+.texto-neon-azul {
+    color: #00e5ff;
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.5);
+}
+
+.texto-neon-purpura {
+    color: #d500f9;
+    text-shadow: 0 0 10px rgba(213, 0, 249, 0.6);
+}
+
+.shadow-neon {
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.15);
+}
+
+/* =========================================
+   Estilos específicos para la Tabla (Rowspan)
+========================================= */
+.table {
+    border-color: #1f2833;
+}
+
+.table th, .table td {
+    padding: 1rem;
+}
+
+.bg-gradiente-purpura {
+    background: linear-gradient(180deg, #4a148c, #311b92) !important;
+    vertical-align: middle;
+    border-right: 2px solid #d500f9;
+}
+
+.bg-gradiente-azul {
+    background: linear-gradient(180deg, #01579b, #004d40) !important;
+    vertical-align: middle;
+    border-right: 2px solid #00e5ff;
+}
+
+/* Mejorar el input form al estilo oscuro */
+.form-control:focus, .form-select:focus {
+    background-color: #2b303b;
+    color: #fff;
+    border-color: #00e5ff;
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.5);
+}
